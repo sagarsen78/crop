@@ -22,7 +22,7 @@ def predict():
         humimeasure=int(request.form['humi'])
         phmeasure=int(request.form['ph'])
         rainmeasure=int(request.form['rain'])
-        yhat.model.predict([[nmeasure,pmeasure,kmeasure,tempmeasure,humimeasure,phmeasure,rainmeasure]])
+        yhat=model.predict([[nmeasure,pmeasure,kmeasure,tempmeasure,humimeasure,phmeasure,rainmeasure]])
         return render_template('output.html',prediction=yhat[0])
 
 if __name__=='__main__':
