@@ -1,5 +1,15 @@
 # crop
 This is a Crop recommendation system project.
 
-To run the code you need to make sure that you change the location address in app.py file.
-After that you can run the code.
+
+
+Before proceeding with it make sure you install some libraries:
+1. pickle
+2. numpy
+3. pandas
+4. matplotlib
+5. seaborn
+6. Flask
+
+Make sure you locate where the .PKL file is located in the app.py(file location)
+And then run the - app.py 
