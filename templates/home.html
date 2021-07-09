@@ -1,20 +1,18 @@
 <html>
-    <body bgcolor=#d4a3ae>
-    <center>
-        <h1>CROP PREDICTION SYSTEM</h1><h1>
-        <form method="POST" , action="{{ url_for('home' )}}">
-            <b> First n value :<input type="text", name="nmeasure" , placeholder="enter 1"><br><br>
-                Second p value :<input type="text", name="pmeasure" , placeholder="enter 2"><br><br>
-                Third k value : <input type="text", name="kmeasure" , placeholder="enter 3"><br><br>
-                Fourth temp value : <input type="text", name="tempmeasure" , placeholder="enter 4"><br><br>
-                Fifth humi value : <input type="text", name="humimeasure" , placeholder="enter 5"><br><br>
-                Sixth ph value: <input type="text", name="phmeasure" , placeholder="enter 6"><br><br>
-                Seventh rain value:<input type="text", name="rainmreasure" , placeholder="enter 7"><br><br>
-                <input type="submit", value="predict!">
+    <title>Crop Recommendation System</title>
+    <body bgcolor="#5E7B52">
+        <center><h1 style="font-family:'Times New Roman';">Welcome to the Flower Recommendation System</h1><br><br>
+                <form action="{{url_for('crop_predict')}}" method='POST'>
+                    <input type='text' name='Nitrogen' placeholder="Enter Nitrogen"><br><br>
+                    <input type='text' name='Phosphorous' placeholder="Enter Phosphorous"><br><br>
+                    <input type='text' name='Potassium' placeholder="Enter Potassium"><br><br>
+                    <input type='text' name='ph' placeholder="Enter Ph"><br><br>
+                    <input type='text' name='rainfall' placeholder="Enter rainfall"><br><br>
+                    <input type='text' name='city' placeholder="Enter Name of the city"><br><br>
+                    <input type="submit" value="predict">
+                </form>
+        </center>
+        
 
-            </b>
-        </form>
-    </h1>
-    </center>
     </body>
 </html>
