@@ -22,7 +22,8 @@ def weather_fetch(city_name): #for fetching weather of city
     :params: city_name
     :return: temperature, humidity
     """
-    api_key = config.weather_api_key #acquiring api key
+    api_key = config.weather_api_key
+    #acquiring api key
     base_url = "http://api.openweathermap.org/data/2.5/weather?" #fetching api
 
     complete_url = base_url + "appid=" + api_key + "&q=" + city_name
